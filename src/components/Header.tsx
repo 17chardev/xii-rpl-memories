@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { GraduationCap, Menu, X } from "lucide-react";
 
 const navItems = [
+  { label: "Siswa", href: "#siswa" },
   { label: "Kenangan", href: "#kenangan" },
   { label: "Testimoni", href: "#testimoni" },
   { label: "Timeline", href: "#timeline" },
