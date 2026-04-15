@@ -47,7 +47,7 @@ const AudioPlayer = () => {
       <audio
         ref={audioRef}
         loop
-        src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3"
+        src="../../assets/song.mp3"
       />
       <motion.div
         initial={{ y: 100, opacity: 0 }}
