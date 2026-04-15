@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play, Pause, Volume2, VolumeX, RotateCcw } from "lucide-react";
+import song from "../assets/song.mp3";
 
 const AudioPlayer = () => {
   const [playing, setPlaying] = useState(false);
@@ -47,7 +48,7 @@ const AudioPlayer = () => {
       <audio
         ref={audioRef}
         loop
-        src="../../assets/song.mp3"
+        src={song}
       />
       <motion.div
         initial={{ y: 100, opacity: 0 }}
