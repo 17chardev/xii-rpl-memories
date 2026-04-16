@@ -9,7 +9,6 @@ const AudioPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
-    // Auto-play attempt (browsers may block this)
     const audio = audioRef.current;
     if (audio) {
       audio.volume = 0.3;
@@ -20,11 +19,7 @@ const AudioPlayer = () => {
   const togglePlay = () => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (playing) {
-      audio.pause();
-    } else {
-      audio.play();
-    }
+    playing ? audio.pause() : audio.play();
     setPlaying(!playing);
   };
 
@@ -45,38 +40,29 @@ const AudioPlayer = () => {
 
   return (
     <>
-      <audio
-        ref={audioRef}
-        loop
-        src={song}
-      />
+      <audio ref={audioRef} loop src={song} />
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full gradient-primary p-2 shadow-elevated"
+        transition={{ delay: 1.5, duration: 0.5 }}
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-1.5 rounded-2xl bg-card/90 p-2 shadow-elevated backdrop-blur-xl border border-border/50"
       >
-        <button
-          onClick={togglePlay}
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/30"
-          aria-label={playing ? "Pause" : "Play"}
-        >
-          {playing ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-        </button>
-        <button
-          onClick={toggleMute}
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/30"
-          aria-label={muted ? "Unmute" : "Mute"}
-        >
-          {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
-        </button>
-        <button
-          onClick={replay}
-          className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/20 text-primary-foreground transition-colors hover:bg-primary-foreground/30"
-          aria-label="Replay"
-        >
-          <RotateCcw className="h-4 w-4" />
-        </button>
+        {[
+          { action: togglePlay, icon: playing ? Pause : Play, label: playing ? "Pause" : "Play" },
+          { action: toggleMute, icon: muted ? VolumeX : Volume2, label: muted ? "Unmute" : "Mute" },
+          { action: replay, icon: RotateCcw, label: "Replay" },
+        ].map(({ action, icon: Icon, label }) => (
+          <motion.button
+            key={label}
+            onClick={action}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors hover:bg-primary/20"
+            aria-label={label}
+          >
+            <Icon className="h-4 w-4" />
+          </motion.button>
+        ))}
       </motion.div>
     </>
   );
