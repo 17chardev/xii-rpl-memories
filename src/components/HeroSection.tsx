@@ -27,7 +27,7 @@ const HeroSection = () => {
       <motion.img
         style={{ y }}
         src={heroImg}
-        alt="Kenangan Kelulusan XII RPL"
+        alt="Kenangan Kelulusan XII RPL 1"
         className="absolute inset-0 h-[120%] w-full object-cover"
         width={1920}
         height={1080}
@@ -53,7 +53,7 @@ const HeroSection = () => {
         >
           <span className="glass inline-flex items-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-primary-foreground">
             <Sparkles className="h-4 w-4" />
-            Kelulusan 2025
+            Kelulusan 2026
           </span>
         </motion.div>
 
@@ -74,7 +74,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-3xl font-light tracking-widest uppercase opacity-70 sm:text-4xl md:text-5xl"
           >
-            Kelas XII RPL
+            Kelas XII RPL 1
           </motion.span>
         </motion.h1>
 
@@ -97,7 +97,7 @@ const HeroSection = () => {
           className="glass mt-2 flex divide-x divide-primary-foreground/20 rounded-2xl px-2"
         >
           {[
-            { value: "12", label: "Siswa" },
+            { value: "19", label: "Siswa" },
             { value: "3", label: "Tahun" },
             { value: "∞", label: "Kenangan" },
           ].map((stat) => (
