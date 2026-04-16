@@ -64,7 +64,7 @@ const HeroSection = () => {
           className="text-5xl font-black leading-[1.1] tracking-tight text-primary-foreground sm:text-6xl md:text-8xl"
         >
           Kenang
-          <span className="mx-3 inline-block gradient-warm bg-clip-text text-transparent" style={{ WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", background: "var(--gradient-warm)" }}>
+          <span className="mx-3 inline-block" style={{ background: "var(--gradient-warm)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
             Kenangan
           </span>
           <br />
