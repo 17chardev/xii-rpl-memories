@@ -41,19 +41,19 @@ const photos = [
 ];
 
 const carrausel = [
-  { src: c1, alt: "Tasyakur di kelas bersama", w: 800, h: 600 },
-  { src: c2, alt: "Hari Guru kelas 10", w: 800, h: 600 },
-  { src: c3, alt: "Kunjungan industri di Hummatech Malang", w: 800, h: 600 },
-  { src: c4, alt: "Foto bersama di sekolah sebelum berangkat PKL", w: 800, h: 600 },
-  { src: c5, alt: "Study tour", w: 600, h: 800 },
-  { src: c6, alt: "Study tour", w: 800, h: 600 },
-  { src: c7, alt: "Fashion show", w: 800, h: 600 },
-  { src: c8, alt: "Foto bersama bu Retno", w: 800, h: 600 },
-  { src: c9, alt: "Hari Guru kelas XII", w: 800, h: 600 },
-  { src: c10, alt: "Isra Mi'raj", w: 800, h: 600 },
-  { src: c11, alt: "Selesai UKK hehe", w: 800, h: 600 },
-  { src: c12, alt: "Pembuatan BTS kelulusan", w: 800, h: 600 },
-  { src: c14, alt: "Foto bersama pak Idin hehe", w: 800, h: 600 },
+  { src: c1, alt: "Tasyakur di kelas bersama", w: 1440, h: 1080 },
+  { src: c2, alt: "Hari Guru kelas 10", w: 1440, h: 1080 },
+  { src: c3, alt: "Kunjungan industri di Hummatech Malang", w: 1440, h: 1080 },
+  { src: c4, alt: "Foto bersama di sekolah sebelum berangkat PKL", w: 1440, h: 1080 },
+  { src: c5, alt: "Study tour", w: 1440, h: 1080 },
+  { src: c6, alt: "Study tour", w: 1440, h: 1080 },
+  { src: c7, alt: "Fashion show", w: 1440, h: 1080 },
+  { src: c8, alt: "Foto bersama bu Retno", w: 1440, h: 1080 },
+  { src: c9, alt: "Hari Guru kelas XII", w: 1440, h: 1080 },
+  { src: c10, alt: "Isra Mi'raj", w: 1440, h: 1080 },
+  { src: c11, alt: "Selesai UKK hehe", w: 1440, h: 1080 },
+  { src: c12, alt: "Pembuatan BTS kelulusan", w: 1440, h: 1080 },
+  { src: c14, alt: "Foto bersama pak Idin hehe", w: 1440, h: 1080 },
 ]
 
 const videos = [
