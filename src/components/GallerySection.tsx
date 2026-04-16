@@ -72,7 +72,7 @@ const PhotoGrid = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {carrausel.map((photo, i) => (
+        {photos.map((photo, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
@@ -209,7 +209,7 @@ const VideoGrid = () => {
 /* ── Carousel ── */
 const GalleryCarousel = () => {
   const allItems = [
-    ...photos.map((p) => ({ type: "photo" as const, ...p })),
+    ...carrausel.map((p) => ({ type: "photo" as const, ...p })),
     ...videos.map((v) => ({ type: "video" as const, ...v })),
   ];
 
