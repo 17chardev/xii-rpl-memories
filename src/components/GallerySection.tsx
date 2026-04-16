@@ -17,6 +17,20 @@ import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
 
+import c1 from "@/assets/c1.jpg";
+import c2 from "@/assets/c2.jpg";
+import c3 from "@/assets/c3.jpg";
+import c4 from "@/assets/c4.jpg";
+import c5 from "@/assets/c5.jpg";
+import c6 from "@/assets/c6.jpg";
+import c7 from "@/assets/c7.jpg";
+import c8 from "@/assets/c8.jpg";
+import c9 from "@/assets/c9.jpg";
+import c10 from "@/assets/c10.jpg";
+import c11 from "@/assets/c11.jpg";
+import c12 from "@/assets/c12.jpg";
+import c14 from "@/assets/c14.jpeg";
+
 const photos = [
   { src: g1, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: g2, alt: "Praktik di lab komputer", w: 800, h: 600 },
@@ -25,6 +39,22 @@ const photos = [
   { src: g5, alt: "Study tour", w: 600, h: 800 },
   { src: g6, alt: "Perayaan kelulusan", w: 800, h: 600 },
 ];
+
+const carrausel = [
+  { src: c1, alt: "Tasyakur di kelas bersama", w: 800, h: 600 },
+  { src: c2, alt: "Hari Guru kelas 10", w: 800, h: 600 },
+  { src: c3, alt: "Kunjungan industri di Hummatech Malang", w: 800, h: 600 },
+  { src: c4, alt: "Foto bersama di sekolah sebelum berangkat PKL", w: 800, h: 600 },
+  { src: c5, alt: "Study tour", w: 600, h: 800 },
+  { src: c6, alt: "Study tour", w: 800, h: 600 },
+  { src: c7, alt: "Fashion show", w: 800, h: 600 },
+  { src: c8, alt: "Foto bersama bu Retno", w: 800, h: 600 },
+  { src: c9, alt: "Hari Guru kelas XII", w: 800, h: 600 },
+  { src: c10, alt: "Isra Mi'raj", w: 800, h: 600 },
+  { src: c11, alt: "Selesai UKK hehe", w: 800, h: 600 },
+  { src: c12, alt: "Pembuatan BTS kelulusan", w: 800, h: 600 },
+  { src: c14, alt: "Foto bersama pak Idin hehe", w: 800, h: 600 },
+]
 
 const videos = [
   { title: "Keseruan di Kelas", thumbnail: g1, url: "https://www.w3schools.com/html/mov_bbb.mp4" },
@@ -42,7 +72,7 @@ const PhotoGrid = () => {
   return (
     <>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {photos.map((photo, i) => (
+        {carrausel.map((photo, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
