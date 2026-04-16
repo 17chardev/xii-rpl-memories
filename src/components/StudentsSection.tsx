@@ -1,24 +1,46 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
-import s1 from "@/assets/student-1.jpg";
-import s2 from "@/assets/student-2.jpg";
-import s3 from "@/assets/student-3.jpg";
-import s4 from "@/assets/student-4.jpg";
+import s1 from "@/assets/1-adel.jpeg";
+import s2 from "@/assets/1-aldo.jpeg";
+import s3 from "@/assets/1-andre.jpeg";
+import s4 from "@/assets/1-arin.jpeg";
+import s5 from "@/assets/1-ayub.jpeg";
+import s6 from "@/assets/1-charles.jpeg";
+// import s7 from "@/assets/1-ela.jpeg";
+import s8 from "@/assets/1-fabian.jpeg";
+import s9 from "@/assets/1-faiz.jpeg";
+import s10 from "@/assets/1-fito.jpeg";
+// import s11 from "@/assets/1-fyto.jpeg";
+import s12 from "@/assets/1-ghio.jpeg";
+import s13 from "@/assets/1-moh yakin.jpeg";
+import s14 from "@/assets/1-raihan.jpeg";
+import s15 from "@/assets/1-refanza.jpeg";
+import s16 from "@/assets/1-reganza.jpeg";
+import s17 from "@/assets/1-sherin.jpeg";
+import s18 from "@/assets/1-sherly.jpeg";
+import s19 from "@/assets/1-siti nur.jpeg";
 
 const students = [
-  { name: "Ahmad Fauzi", motto: "Koding adalah seni!", photo: s1, ig: "#" },
-  { name: "Siti Nurhaliza", motto: "Terus belajar, terus berkembang.", photo: s2, ig: "#" },
-  { name: "Rizky Pratama", motto: "Debug life, compile dreams.", photo: s3, ig: "#" },
-  { name: "Aisyah Putri", motto: "Semangat tanpa batas!", photo: s4, ig: "#" },
-  { name: "Budi Santoso", motto: "RPL for life!", photo: s1, ig: "#" },
-  { name: "Dewi Lestari", motto: "Never stop learning.", photo: s2, ig: "#" },
-  { name: "Fajar Ramadhan", motto: "Hello World, Hello Future.", photo: s3, ig: "#" },
-  { name: "Nur Aini", motto: "Code with passion.", photo: s4, ig: "#" },
-  { name: "Galih Permana", motto: "Sukses itu proses.", photo: s1, ig: "#" },
-  { name: "Rina Marlina", motto: "Dream big, start small.", photo: s2, ig: "#" },
-  { name: "Hendra Wijaya", motto: "Keep calm and code on.", photo: s3, ig: "#" },
-  { name: "Fitri Handayani", motto: "Bersama kita bisa!", photo: s4, ig: "#" },
+  { name: "ADELIA NURFATMAWATI", motto: "Koding adalah seni!", photo: s1, ig: "#" },
+  { name: "ALDO ALGIFARI", motto: "Terus belajar, terus berkembang.", photo: s2, ig: "#" },
+  { name: "ANDRE DWI SAPUTRA", motto: "Debug life, compile dreams.", photo: s3, ig: "#" },
+  { name: "ARINDA CHELSA AULIA", motto: "Semangat tanpa batas!", photo: s4, ig: "#" },
+  { name: "AYUB SAPUTRO", motto: "RPL for life!", photo: s5, ig: "#" },
+  { name: "CHARLES AGUSTIAN PUTRA", motto: "Never stop learning.", photo: s6, ig: "#" },
+  { name: "ELA DWI PURWATI", motto: "Hello World, Hello Future.", photo: s1, ig: "#" },
+  { name: "FABIAN VIGO HARDIANSYAH", motto: "Code with passion.", photo: s8, ig: "#" },
+  { name: "FAIZ ARSYA NAFIZA", motto: "Sukses itu proses.", photo: s9, ig: "#" },
+  { name: "FITO REHANES FIRMANSAH", motto: "Dream big, start small.", photo: s10, ig: "#" },
+  { name: "FYTO SURYA PRATAMA", motto: "Keep calm and code on.", photo: s1, ig: "#" },
+  { name: "GHIO PRAMANA AINURI", motto: "Bersama kita bisa!", photo: s12, ig: "#" },
+  { name: "MOHAMAD YAKIN NUR ROHMAN", motto: "Bersama kita bisa!", photo: s13, ig: "#" },
+  { name: "RAIHAN ROUSYANUL FIKRI", motto: "Bersama kita bisa!", photo: s14, ig: "#" },
+  { name: "REFANZA ANDRA PUTRA PUJANA", motto: "Bersama kita bisa!", photo: s15, ig: "#" },
+  { name: "REGANZA ANDRE PUTRA PUJANA", motto: "Bersama kita bisa!", photo: s16, ig: "#" },
+  { name: "SHERIN ANGELIKA SIGTIAMARTA", motto: "Bersama kita bisa!", photo: s17, ig: "#" },
+  { name: "SHERLYANA SALSABILA PUTRI ANWAR", motto: "Bersama kita bisa!", photo: s18, ig: "#" },
+  { name: "SITI NURHAZIZAH SARAH", motto: "Bersama kita bisa!", photo: s19, ig: "#" },
 ];
 
 const StudentsSection = () => (
