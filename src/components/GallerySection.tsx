@@ -221,7 +221,7 @@ const GalleryCarousel = () => {
             <CarouselItem key={i}>
               <div className="overflow-hidden rounded-2xl shadow-elevated">
                 {item.type === "photo" ? (
-                  <img src={item.src} alt={item.alt} className="h-72 w-full object-cover sm:h-[420px]" />
+                  <img src={item.src} alt={item.alt} className="h-72 w-full object-cover sm:h-[480px] w-[640px]" />
                 ) : (
                   <video src={item.url} controls poster={item.thumbnail} className="h-72 w-full object-cover sm:h-[420px]" />
                 )}
