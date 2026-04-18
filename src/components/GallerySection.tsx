@@ -44,7 +44,6 @@ import p10 from "@/assets/gallery/10.jpg";
 import p11 from "@/assets/gallery/11.jpg";
 import p12 from "@/assets/gallery/12.jpg";
 import p13 from "@/assets/gallery/13.jpg";
-// import p14 from "@/assets/gallery/14.jpg";
 import p15 from "@/assets/gallery/15.jpg";
 import p16 from "@/assets/gallery/16.jpg";
 import p17 from "@/assets/gallery/17.jpg";
@@ -144,7 +143,6 @@ const photos = [
   { src: p11, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p12, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p13, alt: "Di kelas bersama", w: 800, h: 600 },
-  // { src: p14, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p15, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p16, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p17, alt: "Di kelas bersama", w: 800, h: 600 },
