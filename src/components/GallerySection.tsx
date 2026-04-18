@@ -231,7 +231,7 @@ const carrausel = [
 ]
 
 const videos = [
-  { title: "Keseruan di Kelas", thumbnail: g1, url: "https://collection.cloudinary.com/dhkfrpae6/2bc51b0dbfe45ce78d34ed79dbd7e05d" },
+  { title: "Keseruan di Kelas", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/q_auto/f_auto/v1744029952/samples/cld-sample-video.mp4" },
   { title: "Praktik Lab Komputer", thumbnail: g2, url: "https://www.w3schools.com/html/movie.mp4" },
   { title: "Hari Olahraga", thumbnail: g3, url: "https://www.w3schools.com/html/mov_bbb.mp4" },
   { title: "Study Tour Bersama", thumbnail: g4, url: "https://www.w3schools.com/html/movie.mp4" },
