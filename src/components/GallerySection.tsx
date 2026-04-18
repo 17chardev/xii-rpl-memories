@@ -93,7 +93,6 @@ import p60 from "@/assets/gallery/60.jpeg";
 import p61 from "@/assets/gallery/61.jpeg";
 import p62 from "@/assets/gallery/62.jpeg";
 import p63 from "@/assets/gallery/63.jpeg";
-import p64 from "@/assets/gallery/64.jpeg";
 import p65 from "@/assets/gallery/65.jpeg";
 import p66 from "@/assets/gallery/66.jpeg";
 import p67 from "@/assets/gallery/67.jpeg";
@@ -192,7 +191,6 @@ const photos = [
   { src: p61, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p62, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p63, alt: "Di kelas bersama", w: 800, h: 600 },
-  { src: p64, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p65, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p66, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: p67, alt: "Di kelas bersama", w: 800, h: 600 },
