@@ -31,7 +31,97 @@ import c11 from "@/assets/c11.jpg";
 import c12 from "@/assets/c12.jpg";
 import c14 from "@/assets/c14.jpeg";
 
-const photos = [
+import p1 from "@/assets/gallery/1.jpg";
+import p2 from "@/assets/gallery/2.jpg";
+import p3 from "@/assets/gallery/3.jpg";
+import p4 from "@/assets/gallery/4.jpg";
+import p5 from "@/assets/gallery/5.jpg";
+import p6 from "@/assets/gallery/6.jpg";
+import p7 from "@/assets/gallery/7.jpg";
+import p8 from "@/assets/gallery/8.jpg";
+import p9 from "@/assets/gallery/9.jpg";
+import p10 from "@/assets/gallery/10.jpg";
+import p11 from "@/assets/gallery/11.jpg";
+import p12 from "@/assets/gallery/12.jpg";
+import p13 from "@/assets/gallery/13.jpg";
+import p14 from "@/assets/gallery/14.jpg";
+import p15 from "@/assets/gallery/15.jpg";
+import p16 from "@/assets/gallery/16.jpg";
+import p17 from "@/assets/gallery/17.jpg";
+import p18 from "@/assets/gallery/18.jpg";
+import p19 from "@/assets/gallery/19.jpg";
+import p20 from "@/assets/gallery/20.jpg";
+import p21 from "@/assets/gallery/21.jpg";
+import p22 from "@/assets/gallery/22.jpg";
+import p23 from "@/assets/gallery/23.jpg";
+import p24 from "@/assets/gallery/24.jpg";
+import p25 from "@/assets/gallery/25.jpg";
+import p26 from "@/assets/gallery/26.jpg";
+import p27 from "@/assets/gallery/27.jpg";
+import p28 from "@/assets/gallery/28.jpg";
+import p29 from "@/assets/gallery/29.jpeg";
+import p30 from "@/assets/gallery/30.jpeg";
+import p31 from "@/assets/gallery/31.jpeg";
+import p32 from "@/assets/gallery/32.jpeg";
+import p33 from "@/assets/gallery/33.jpeg";
+import p34 from "@/assets/gallery/34.jpeg";
+import p35 from "@/assets/gallery/35.jpeg";
+import p36 from "@/assets/gallery/36.jpeg";
+import p37 from "@/assets/gallery/37.jpeg";
+import p38 from "@/assets/gallery/38.jpeg";
+import p39 from "@/assets/gallery/39.jpeg";
+import p40 from "@/assets/gallery/40.jpeg";
+import p41 from "@/assets/gallery/41.jpeg";
+import p42 from "@/assets/gallery/42.jpeg";
+import p43 from "@/assets/gallery/43.jpeg";
+import p44 from "@/assets/gallery/44.jpeg";
+import p45 from "@/assets/gallery/45.jpeg";
+import p46 from "@/assets/gallery/46.jpeg";
+import p47 from "@/assets/gallery/47.jpeg";
+import p48 from "@/assets/gallery/48.jpeg";
+import p49 from "@/assets/gallery/49.jpeg";
+import p50 from "@/assets/gallery/50.jpeg";
+import p51 from "@/assets/gallery/51.jpeg";
+import p52 from "@/assets/gallery/52.jpeg";
+import p53 from "@/assets/gallery/53.jpg";
+import p54 from "@/assets/gallery/54.jpeg";
+import p55 from "@/assets/gallery/55.jpg";
+import p56 from "@/assets/gallery/56.jpg";
+import p57 from "@/assets/gallery/57.jpg";
+import p58 from "@/assets/gallery/58.jpeg";
+import p59 from "@/assets/gallery/59.jpeg";
+import p60 from "@/assets/gallery/60.jpeg";
+import p61 from "@/assets/gallery/61.jpeg";
+import p62 from "@/assets/gallery/62.jpeg";
+import p63 from "@/assets/gallery/63.jpeg";
+import p64 from "@/assets/gallery/64.jpeg";
+import p65 from "@/assets/gallery/65.jpeg";
+import p66 from "@/assets/gallery/66.jpeg";
+import p67 from "@/assets/gallery/67.jpeg";
+import p68 from "@/assets/gallery/68.jpeg";
+import p69 from "@/assets/gallery/69.jpeg";
+import p70 from "@/assets/gallery/70.jpeg";
+import p71 from "@/assets/gallery/71.jpeg";
+import p72 from "@/assets/gallery/72.jpeg";
+import p73 from "@/assets/gallery/73.jpeg";
+import p74 from "@/assets/gallery/74.jpeg";
+import p75 from "@/assets/gallery/75.jpeg";
+import p76 from "@/assets/gallery/76.jpeg";
+import p77 from "@/assets/gallery/77.jpeg";
+import p78 from "@/assets/gallery/78.jpeg";
+import p79 from "@/assets/gallery/79.jpeg";
+import p80 from "@/assets/gallery/80.jpeg";
+import p81 from "@/assets/gallery/81.jpg";
+import p82 from "@/assets/gallery/82.jpeg";
+import p83 from "@/assets/gallery/83.jpeg";
+import p84 from "@/assets/gallery/84.jpg";
+import p85 from "@/assets/gallery/85.jpg";
+import p86 from "@/assets/gallery/86.jpg";
+import p87 from "@/assets/gallery/87.jpg";
+
+
+
+const photoss = [
   { src: g1, alt: "Di kelas bersama", w: 800, h: 600 },
   { src: g2, alt: "Praktik di lab komputer", w: 800, h: 600 },
   { src: g3, alt: "Hari olahraga", w: 800, h: 600 },
@@ -39,6 +129,96 @@ const photos = [
   { src: g5, alt: "Study tour", w: 600, h: 800 },
   { src: g6, alt: "Perayaan kelulusan", w: 800, h: 600 },
 ];
+
+const photos = [
+  { src: p1, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p2, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p3, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p4, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p5, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p6, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p7, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p8, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p9, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p10, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p11, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p12, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p13, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p14, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p15, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p16, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p17, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p18, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p19, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p20, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p21, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p22, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p23, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p24, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p25, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p26, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p27, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p28, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p29, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p30, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p31, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p32, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p33, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p34, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p35, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p36, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p37, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p38, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p39, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p40, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p41, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p42, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p43, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p44, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p45, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p46, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p47, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p48, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p49, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p50, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p51, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p52, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p53, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p54, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p55, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p56, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p57, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p58, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p59, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p60, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p61, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p62, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p63, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p64, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p65, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p66, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p67, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p68, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p69, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p70, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p71, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p72, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p73, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p74, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p75, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p76, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p77, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p78, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p79, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p80, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p81, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p82, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p83, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p84, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p85, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p86, alt: "Di kelas bersama", w: 800, h: 600 },
+  { src: p87, alt: "Di kelas bersama", w: 800, h: 600 }
+]
 
 const carrausel = [
   { src: c1, alt: "Tasyakur di kelas bersama", w: 1440, h: 1080 },
