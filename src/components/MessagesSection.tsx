@@ -74,7 +74,7 @@ const messages: Message[] = [
   {
     id: "m10",
     name: "Sahabat",
-    text: "Jangan lupa sama aku yaaa",
+    text: "saya sangat suka sekolah di SMK 17 Muncar",
     color: colors[3],
   },
 ];
