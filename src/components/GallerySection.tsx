@@ -10,13 +10,6 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
-
 import c1 from "@/assets/c1.jpg";
 import c2 from "@/assets/c2.jpg";
 import c3 from "@/assets/c3.jpg";
@@ -116,16 +109,12 @@ import p85 from "@/assets/gallery/85.jpg";
 import p86 from "@/assets/gallery/86.jpg";
 import p87 from "@/assets/gallery/87.jpg";
 
-
-
-const photoss = [
-  { src: g1, alt: "Di kelas bersama", w: 800, h: 600 },
-  { src: g2, alt: "Praktik di lab komputer", w: 800, h: 600 },
-  { src: g3, alt: "Hari olahraga", w: 800, h: 600 },
-  { src: g4, alt: "Foto bersama di sekolah", w: 800, h: 600 },
-  { src: g5, alt: "Study tour", w: 600, h: 800 },
-  { src: g6, alt: "Perayaan kelulusan", w: 800, h: 600 },
-];
+import t1 from "@/assets/thumbnail/t-fokus1.png";
+import t2 from "@/assets/thumbnail/t-fokus2.png";
+import t3 from "@/assets/thumbnail/t-kerkol.png";
+import t4 from "@/assets/thumbnail/t-lab4.png";
+import t5 from "@/assets/thumbnail/t-rakit.png";
+import t6 from "@/assets/thumbnail/t-ukk.png";
 
 const photos = [
   { src: p1, alt: "Di kelas bersama", w: 800, h: 600 },
@@ -231,67 +220,68 @@ const carrausel = [
 ]
 
 const videos = [
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503963/j0g7wu9otry0ym36alav.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503960/kr6sd8wosk1srhnpwplr.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503958/krwolqp0hd0k4xlq29w0.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503957/z8avrvy0tiswi2evvibj.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503956/wyeg5naor53b8heecdo5.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503954/fotlg8bbukktfwke3ntt.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503953/w3mybypepc3kpvaxgcfw.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503952/w2ncwonnfhjcbvllhhck.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503951/cahgzmk57vqrt4s1zx7y.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503950/gjzobfm4tcj74oc7l9ad.mp4" },
-  { title: "Uji Kompetensi Keahlian", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503850/pvxqxjug2f1wqmxpcnsv.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503946/yvw5v6n96i8rfcgexfef.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503940/pvgb9yo2acxbacfcm88e.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503939/nmyetjmvgews1ruucshp.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503937/wyof7yrftxwxksvnq009.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503937/lidueadcdty2nwnfchhy.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503935/hu8m5ymgiwoegba6itop.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503935/m05q1dy7lct61ziv9zld.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503931/upm4jjxcawzzcgvfnhkx.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503933/rg79opqbmggnds08cvpb.mp4" },
-  { title: "Kerja sama itu baik", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503931/jhyx30zb6jpryj7uurtk.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503928/adeswzxfjue6yxhqn2uy.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503921/rg0mcyonohssqcaflzg7.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503921/lqqgklf9j0fsjohxzb8b.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503920/sysadb0nzz3ktludxfuc.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503919/rkyccpwv5xu4wnpt4bm7.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503918/a8027epp8vmcrsbyuqss.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503917/xjy9j8dqczqwporopgn6.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503916/pd6wzlneihgx58s1xhyo.mp4" },
-  { title: "All About Lab 4", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503915/ry5zyyr0lqppppcm4ljc.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503891/kviwon2djrc36x5eykc6.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503889/du7nq4ziitalsam6txiv.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503888/lyr0rp9qsp0wdu3alc2j.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/cp0hu6ivfgcm3dekkbfo.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/zurkjx8uiuzyodu1caqw.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/ycg5wo11xk81zbsqp2iz.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/uko5z5ne0knrurusz0bx.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503884/rqvnty63gxabfzk2slpe.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503884/naicze6hsd20xm4crsie.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503883/ozn4gdpwnxszbqgtyozk.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/sysfgzslqkcies8yvjxc.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/phg7awnidz8jamfqbolh.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/vqzqkgr79pbgnudzluxo.mp4" },
-  { title: "Fokus guys", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503881/iwwjugea7tvaakc0zniw.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503910/tfaf2cxigtvyqsbmvahb.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503910/qshwgr5rch6zfkvxnoom.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503908/hymdi4varuslg6r1ka3s.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503908/skpm2lld2cuscu1r8fer.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503904/pw2ttqfelu9qg42cqhfa.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503904/fs2h2fuaqdpjq3hqewwz.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503899/jviusbnqwt5uomisuoyg.mp4" },
-  { title: "Belajar rakit dulu", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503899/qzjnnvcqi3xd7qvatplg.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503873/ryrtvaeslqr0grxmstvh.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503871/vduwzsp1rc8u4hwtxfsn.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503868/n8wngizrm0aj5wt8mdrr.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503864/jqf5isk74y8l7dpavrrz.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503859/zwhglt99iwwliqds0s0w.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503858/filvwecdeliihcvw2yww.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503856/zrmpuceptk4ashgbzphy.mp4" },
-  { title: "Outdoor pokoknya", thumbnail: g1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503854/bjv2f9bnxjtswl2rgsrm.mp4" }
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503963/j0g7wu9otry0ym36alav.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503960/kr6sd8wosk1srhnpwplr.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503958/krwolqp0hd0k4xlq29w0.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503957/z8avrvy0tiswi2evvibj.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503956/wyeg5naor53b8heecdo5.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503954/fotlg8bbukktfwke3ntt.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503953/w3mybypepc3kpvaxgcfw.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503952/w2ncwonnfhjcbvllhhck.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503951/cahgzmk57vqrt4s1zx7y.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503950/gjzobfm4tcj74oc7l9ad.mp4" },
+  { title: "Uji Kompetensi Keahlian", thumbnail: t6, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503850/pvxqxjug2f1wqmxpcnsv.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503946/yvw5v6n96i8rfcgexfef.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503940/pvgb9yo2acxbacfcm88e.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503939/nmyetjmvgews1ruucshp.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503937/wyof7yrftxwxksvnq009.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503937/lidueadcdty2nwnfchhy.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503935/hu8m5ymgiwoegba6itop.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503935/m05q1dy7lct61ziv9zld.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503931/upm4jjxcawzzcgvfnhkx.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503933/rg79opqbmggnds08cvpb.mp4" },
+  { title: "Kerja sama itu baik", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503931/jhyx30zb6jpryj7uurtk.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503928/adeswzxfjue6yxhqn2uy.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503921/rg0mcyonohssqcaflzg7.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503921/lqqgklf9j0fsjohxzb8b.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503920/sysadb0nzz3ktludxfuc.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503919/rkyccpwv5xu4wnpt4bm7.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503918/a8027epp8vmcrsbyuqss.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503917/xjy9j8dqczqwporopgn6.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503916/pd6wzlneihgx58s1xhyo.mp4" },
+  { title: "All About Lab 4", thumbnail: t4, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503915/ry5zyyr0lqppppcm4ljc.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503891/kviwon2djrc36x5eykc6.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503889/du7nq4ziitalsam6txiv.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503888/lyr0rp9qsp0wdu3alc2j.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/cp0hu6ivfgcm3dekkbfo.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/zurkjx8uiuzyodu1caqw.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/ycg5wo11xk81zbsqp2iz.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503885/uko5z5ne0knrurusz0bx.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503884/rqvnty63gxabfzk2slpe.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503884/naicze6hsd20xm4crsie.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503883/ozn4gdpwnxszbqgtyozk.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/sysfgzslqkcies8yvjxc.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/phg7awnidz8jamfqbolh.mp4" },
+  { title: "Fokus guys", thumbnail: t1, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503882/vqzqkgr79pbgnudzluxo.mp4" },
+  { title: "Fokus guys", thumbnail: t2, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503881/iwwjugea7tvaakc0zniw.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503910/tfaf2cxigtvyqsbmvahb.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503910/qshwgr5rch6zfkvxnoom.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503908/hymdi4varuslg6r1ka3s.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503908/skpm2lld2cuscu1r8fer.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503904/pw2ttqfelu9qg42cqhfa.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503904/fs2h2fuaqdpjq3hqewwz.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503899/jviusbnqwt5uomisuoyg.mp4" },
+  { title: "Belajar rakit dulu", thumbnail: t5, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503899/qzjnnvcqi3xd7qvatplg.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503873/ryrtvaeslqr0grxmstvh.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503871/vduwzsp1rc8u4hwtxfsn.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503868/n8wngizrm0aj5wt8mdrr.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503864/jqf5isk74y8l7dpavrrz.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503859/zwhglt99iwwliqds0s0w.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503858/filvwecdeliihcvw2yww.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503856/zrmpuceptk4ashgbzphy.mp4" },
+  { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503854/bjv2f9bnxjtswl2rgsrm.mp4" }
 ];
+
 /* ── Photo Grid with Lightbox ── */
 const PhotoGrid = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
