@@ -282,7 +282,7 @@ const videos = [
   { title: "Outdoor pokoknya", thumbnail: t3, url: "https://res.cloudinary.com/dhkfrpae6/video/upload/v1776503854/bjv2f9bnxjtswl2rgsrm.mp4" }
 ];
 
-/* ── Photo Grid with Lightbox ── */
+/* ── Photo Grid with Lightbox (Masonry) ── */
 const PhotoGrid = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
   const prev = () => setLightbox((v) => (v !== null ? (v + photos.length - 1) % photos.length : null));
@@ -290,16 +290,28 @@ const PhotoGrid = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Stats bar */}
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-3 px-1">
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <ImageIcon className="h-4 w-4 text-primary" />
+          <span><span className="font-bold text-foreground">{photos.length}</span> momen tersimpan</span>
+        </div>
+        <span className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+          ✨ Klik foto untuk memperbesar
+        </span>
+      </div>
+
+      {/* Masonry layout via CSS columns */}
+      <div className="columns-2 gap-3 sm:columns-3 sm:gap-4 lg:columns-4">
         {photos.map((photo, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.08 }}
-            whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="group cursor-pointer overflow-hidden rounded-2xl bg-card shadow-card transition-shadow hover:shadow-elevated"
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.4, delay: Math.min((i % 12) * 0.04, 0.4) }}
+            whileHover={{ y: -4, transition: { duration: 0.2 } }}
+            className="group relative mb-3 sm:mb-4 cursor-pointer overflow-hidden rounded-2xl bg-card shadow-card ring-1 ring-border/40 transition-all hover:shadow-elevated hover:ring-primary/30 break-inside-avoid"
             onClick={() => setLightbox(i)}
           >
             <div className="relative overflow-hidden">
@@ -309,11 +321,24 @@ const PhotoGrid = () => {
                 loading="lazy"
                 width={photo.w}
                 height={photo.h}
-                className="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.08]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-              <div className="absolute bottom-3 left-3 right-3 translate-y-4 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p className="text-sm font-medium text-primary-foreground">{photo.alt}</p>
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+              {/* Number badge */}
+              <div className="absolute top-2 left-2 flex h-7 min-w-[28px] items-center justify-center rounded-full glass-strong px-2 text-[10px] font-bold text-primary-foreground opacity-0 transition-all duration-300 group-hover:opacity-100">
+                {i + 1}
+              </div>
+
+              {/* Zoom indicator */}
+              <div className="absolute top-2 right-2 flex h-8 w-8 items-center justify-center rounded-full glass-strong text-primary-foreground opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
+                <ImageIcon className="h-3.5 w-3.5" />
+              </div>
+
+              {/* Caption */}
+              <div className="absolute bottom-0 left-0 right-0 p-3 translate-y-3 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-xs font-semibold text-primary-foreground line-clamp-1">{photo.alt}</p>
               </div>
             </div>
           </motion.div>
@@ -329,33 +354,38 @@ const PhotoGrid = () => {
             className="fixed inset-0 z-[100] flex items-center justify-center bg-foreground/95 backdrop-blur-xl"
             onClick={() => setLightbox(null)}
           >
-            <button onClick={() => setLightbox(null)} className="absolute right-6 top-6 rounded-full glass p-2 text-primary-foreground hover:opacity-80">
-              <X className="h-6 w-6" />
+            <button onClick={() => setLightbox(null)} className="absolute right-4 top-4 sm:right-6 sm:top-6 rounded-full glass-strong p-2 text-primary-foreground hover:opacity-80 z-10">
+              <X className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
-            <button onClick={(e) => { e.stopPropagation(); prev(); }} className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full glass p-3 text-primary-foreground hover:opacity-80">
-              <ChevronLeft className="h-6 w-6" />
+            <button onClick={(e) => { e.stopPropagation(); prev(); }} className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 rounded-full glass-strong p-2 sm:p-3 text-primary-foreground hover:opacity-80 z-10">
+              <ChevronLeft className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
-            <button onClick={(e) => { e.stopPropagation(); next(); }} className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full glass p-3 text-primary-foreground hover:opacity-80">
-              <ChevronRight className="h-6 w-6" />
+            <button onClick={(e) => { e.stopPropagation(); next(); }} className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 rounded-full glass-strong p-2 sm:p-3 text-primary-foreground hover:opacity-80 z-10">
+              <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6" />
             </button>
-            <motion.img
-              key={lightbox}
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              src={photos[lightbox].src}
-              alt={photos[lightbox].alt}
-              className="max-h-[85vh] max-w-[90vw] rounded-2xl object-contain shadow-elevated"
-              onClick={(e) => e.stopPropagation()}
-            />
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-              {photos.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={(e) => { e.stopPropagation(); setLightbox(i); }}
-                  className={`h-2 rounded-full transition-all ${i === lightbox ? "w-8 bg-primary-foreground" : "w-2 bg-primary-foreground/40"}`}
-                />
-              ))}
+
+            {/* Counter pill */}
+            <div className="absolute top-4 left-4 sm:top-6 sm:left-6 rounded-full glass-strong px-4 py-1.5 text-xs sm:text-sm font-semibold text-primary-foreground z-10">
+              {lightbox + 1} <span className="opacity-60">/ {photos.length}</span>
             </div>
+
+            <motion.div
+              key={lightbox}
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              className="flex flex-col items-center gap-3 px-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={photos[lightbox].src}
+                alt={photos[lightbox].alt}
+                className="max-h-[80vh] max-w-[92vw] rounded-2xl object-contain shadow-elevated"
+              />
+              <p className="rounded-full glass-strong px-4 py-1.5 text-xs sm:text-sm font-medium text-primary-foreground">
+                {photos[lightbox].alt}
+              </p>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
