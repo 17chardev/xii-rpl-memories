@@ -20,20 +20,62 @@ const messages: Message[] = [
   {
     id: "m1",
     name: "Alumni",
-    text: "Sukses selalu untuk kelas XII RPL! Kenangan ini akan selalu terkenang ✨",
+    text: "Makasih buat 2 tahun nya pak idin, semoga pak idin selalu di mudahkan segala urusan nya dan selalu sehat, Semangat pak saya yakin Samian bisa jadi orang yang punya peran penting  di masa depan. ✨🫂",
     color: colors[0],
   },
   {
     id: "m2",
-    name: "Adik Kelas",
-    text: "Inspiratif kak! Semoga jadi panutan untuk kami semua 💙",
+    name: "Alumni",
+    text: "every end has a new begining artinya setiap akhir memiliki awal yang baru.",
     color: colors[1],
   },
   {
     id: "m3",
     name: "Sahabat",
-    text: "Terima kasih untuk semua momen indahnya. Selamat berpisah dan sampai jumpa di puncak kesuksesan!",
+    text: "semoga sukses bareng-bareng kita semua.",
     color: colors[2],
+  },
+  {
+    id: "m4",
+    name: "Sahabat",
+    text: "semoga kita sukses bersama sama.",
+    color: colors[3],
+  },
+  {
+    id: "m5",
+    name: "Alumni",
+    text: "tetap sadar diri dan menjadi diri sendiri. kelazz",
+    color: colors[0],
+  },
+  {
+    id: "m6",
+    name: "Alumni",
+    text: "Ternyata yang paling susah itu bukan soal matematika, tapi menahan ngantuk di jam pelajaran terakhir walaupun kita banyak jamkosnya wkwkwk. Terima kasih teman-teman sudah jadi partner bolos yang kompak dan berbagi jawaban.",
+    color: colors[1],
+  },
+  {
+    id: "m7",
+    name: "Sahabat",
+    text: "Semoga di SMK 17 Muncar kedepannya lebih meningkat dari segi fasilitas, guru, ekstra kurikuler, dan materi pembelajaran.",
+    color: colors[2],
+  },
+  {
+    id: "m8",
+    name: "Sahabat",
+    text: "Orang bijak pernah berkata bahwa terkadang pertemuan yang singkat punya kenangan dan memori yang sangat indah, semoga di kesempatan-kesempatan berikutnya semesta punya rencana untuk mempertemukan kita kembali.",
+    color: colors[3],
+  },
+  {
+    id: "m9",
+    name: "Sahabat",
+    text: "Jangan lupa sama aku yaaa.",
+    color: colors[2],
+  },
+  {
+    id: "m10",
+    name: "Sahabat",
+    text: "Jangan lupa sama aku yaaa",
+    color: colors[3],
   },
 ];
 
