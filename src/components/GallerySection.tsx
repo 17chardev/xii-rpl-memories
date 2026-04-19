@@ -369,29 +369,29 @@ const VideoGrid = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-5 lg:grid-cols-4">
         {videos.map((video, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
+            transition={{ duration: 0.5, delay: i * 0.05 }}
             whileHover={{ y: -6, transition: { duration: 0.2 } }}
-            className="group relative cursor-pointer overflow-hidden rounded-2xl bg-card shadow-card transition-shadow hover:shadow-elevated"
+            className="group relative cursor-pointer overflow-hidden rounded-2xl bg-card shadow-card transition-shadow hover:shadow-elevated aspect-[9/16]"
             onClick={() => setActiveVideo(i)}
           >
-            <img src={video.thumbnail} alt={video.title} loading="lazy" className="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <img src={video.thumbnail} alt={video.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 flex items-center justify-center bg-foreground/20 transition-colors group-hover:bg-foreground/40">
               <motion.div
                 whileHover={{ scale: 1.1 }}
-                className="flex h-16 w-16 items-center justify-center rounded-full glass text-primary-foreground shadow-glow"
+                className="flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-full glass text-primary-foreground shadow-glow"
               >
-                <Play className="h-7 w-7 ml-1" />
+                <Play className="h-5 w-5 sm:h-7 sm:w-7 ml-1" />
               </motion.div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 to-transparent p-5">
-              <p className="text-sm font-bold text-primary-foreground">{video.title}</p>
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/80 to-transparent p-3 sm:p-5">
+              <p className="text-xs sm:text-sm font-bold text-primary-foreground line-clamp-2">{video.title}</p>
             </div>
           </motion.div>
         ))}
@@ -412,10 +412,10 @@ const VideoGrid = () => {
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="w-full max-w-3xl px-4"
+              className="w-full max-w-sm px-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <video src={videos[activeVideo].url} controls autoPlay className="w-full rounded-2xl shadow-elevated" />
+              <video src={videos[activeVideo].url} controls autoPlay playsInline className="w-full rounded-2xl shadow-elevated aspect-[9/16] object-cover bg-foreground" />
               <p className="mt-4 text-center text-sm font-semibold text-primary-foreground">{videos[activeVideo].title}</p>
             </motion.div>
           </motion.div>
