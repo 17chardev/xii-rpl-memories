@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Clock } from "lucide-react";
 
 const events = [
-  { year: "2022", title: "Awal Perjalanan", desc: "Hari pertama masuk kelas X RPL. Perkenalan dan mulai belajar dasar pemrograman.", emoji: "🎒" },
-  { year: "2023", title: "Kelas XI — Berkembang", desc: "Mulai membuat project nyata, ikut lomba, dan magang di industri IT.", emoji: "💻" },
+  { year: "2023", title: "Awal Perjalanan", desc: "Hari pertama masuk kelas X RPL. Perkenalan dan mulai belajar dasar pemrograman.", emoji: "🎒" },
   { year: "2024", title: "Study Tour", desc: "Kunjungan ke perusahaan teknologi dan wisata bersama teman-teman sekelas.", emoji: "✈️" },
-  { year: "2024", title: "Ujian & Presentasi", desc: "Mengerjakan project akhir dan presentasi di depan dewan guru.", emoji: "📊" },
-  { year: "2025", title: "Kelulusan", desc: "Hari yang ditunggu-tunggu. Selamat kepada seluruh siswa XII RPL!", emoji: "🎓" },
+  { year: "2024", title: "Kelas XI — Berkembang", desc: "Mulai membuat project nyata, ikut lomba, dan magang di industri IT.", emoji: "💻" },
+  { year: "2026", title: "Ujian & Presentasi", desc: "Mengerjakan project akhir dan presentasi di depan dewan guru.", emoji: "📊" },
+  { year: "2026", title: "Kelulusan", desc: "Hari yang ditunggu-tunggu. Selamat kepada seluruh siswa XII RPL!", emoji: "🎓" },
 ];
 
 const TimelineSection = () => (
