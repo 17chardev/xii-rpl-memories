@@ -3,11 +3,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Quote, MessageCircle } from "lucide-react";
 
 const testimonials = [
-  { name: "Ahmad Rizki", message: "Tiga tahun bersama XII RPL adalah pengalaman terbaik. Terima kasih atas semua kenangan indah!" },
-  { name: "Siti Nurhaliza", message: "Dari yang tidak bisa coding sama sekali, sekarang jadi bisa bikin website. Terima kasih teman-teman dan guru!" },
-  { name: "Budi Santoso", message: "Kelas RPL mengajarkanku arti kerja keras dan kerja sama. Semoga kita semua sukses di masa depan!" },
-  { name: "Dewi Anggraini", message: "Momen-momen begadang bareng ngerjain project, presentasi bareng, semua itu nggak akan terlupakan." },
-  { name: "Fajar Pratama", message: "Sukses selalu untuk XII RPL! Kita membuktikan bahwa anak RPL bisa berprestasi di banyak bidang." },
+  { name: "Siswa XII RPL 1", message: "SMK 17 1945 Muncar sangat rekomendasi." },
+  { name: "Siswa XII RPL 1", message: "See you next time." },
+  { name: "Siswa XII RPL 1", message: "Kita masih belum selesai,karna perpisahan  ada bagi mereka yang tidak saling mencintai,tapii bagi kita yang saling mencintai tidak ada kata perpisahann 77x." },
+  { name: "Siswa XII RPL 1", message: "Masa masa SMK yang sangat seru dan menyenangkan. Berbeda dengan SMA yang bergenre Romance, Drama, dan Comedy. Di SMK tentu saja bergenre Action, Adventure, dan Survival yang mengarah ke Lingkungan dan Mata Pelajaran Praktik yang sangat menguras banyak tenaga dan otak. Untuk Guru dan Murid di SMK ini random yah menurut sikap dan pergaulan kita masing masing." },
+  { name: "Siswa XII RPL 1", message: "Samian guru saya yang paling banyak ngasih tau tentang dunia ini pak, Samian guru terbaik selama saya nempuh pendidikan saya bener bener bersyukur Samian jadi wali kelas saya." },
+  { name: "Siswa XII RPL 1", message: "Cita-cita boleh setinggi langit, tapi jangan lupa daratan. Tetap ingat teman lama, jangan sombong kalau nanti sudah jadi bos,dan untuk sekolah tolong jangan sering jamkos kita bosan jamkos terus, SEEE YOUU." },
+  { name: "Siswa XII RPL 1", message: "mainnya hebat!" },
+  { name: "Siswa XII RPL 1", message: "makasih ya pak meskipun kita kadang susah diatur tapi pak idin tetap sabar ngadepin kita dan bikin kelas tetap seru." },
+  { name: "Siswa XII RPL 1", message: "makasih selama jadi wali kelas udah banyak ngasih motivasi " },
+  { name: "Siswa XII RPL 1", message: "Saya akan kembali ke kota saya sebagai seorang rakyat biasa " },
 ];
 
 const TestimonialSection = () => {
