@@ -7,6 +7,7 @@ const navItems = [
   { label: "Kenangan", href: "#kenangan" },
   { label: "Testimoni", href: "#testimoni" },
   { label: "Timeline", href: "#timeline" },
+  { label: "Pesan", href: "#pesan" },
   { label: "Kontak", href: "#kontak" },
 ];
 
