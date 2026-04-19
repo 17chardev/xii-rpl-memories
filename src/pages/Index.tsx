@@ -5,6 +5,7 @@ import GallerySection from "@/components/GallerySection";
 import TestimonialSection from "@/components/TestimonialSection";
 import TimelineSection from "@/components/TimelineSection";
 import ContactSection from "@/components/ContactSection";
+import MessagesSection from "@/components/MessagesSection";
 import AudioPlayer from "@/components/AudioPlayer";
 
 const Index = () => (
@@ -16,6 +17,7 @@ const Index = () => (
       <GallerySection />
       <TestimonialSection />
       <TimelineSection />
+      <MessagesSection />
       <ContactSection />
     </main>
     <AudioPlayer />
