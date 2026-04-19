@@ -412,10 +412,10 @@ const VideoGrid = () => {
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              className="w-full max-w-3xl px-4"
+              className="w-full max-w-sm px-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <video src={videos[activeVideo].url} controls autoPlay className="w-full rounded-2xl shadow-elevated" />
+              <video src={videos[activeVideo].url} controls autoPlay playsInline className="w-full rounded-2xl shadow-elevated aspect-[9/16] object-cover bg-foreground" />
               <p className="mt-4 text-center text-sm font-semibold text-primary-foreground">{videos[activeVideo].title}</p>
             </motion.div>
           </motion.div>
