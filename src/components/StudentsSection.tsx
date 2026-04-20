@@ -11,7 +11,7 @@ import s7 from "@/assets/1-ela.jpeg";
 import s8 from "@/assets/1-fabian.jpeg";
 import s9 from "@/assets/1-faiz.jpeg";
 import s10 from "@/assets/1-fito.jpeg";
-// import s11 from "@/assets/1-fyto.jpeg";
+import s11 from "@/assets/1-fyto.jpeg";
 import s12 from "@/assets/1-ghio.jpeg";
 import s13 from "@/assets/1-moh yakin.jpeg";
 import s14 from "@/assets/1-raihan.jpeg";
@@ -28,7 +28,7 @@ const students = [
   { name: "ARINDA CHELSA AULIA", motto: "Semangat tanpa batas!", photo: s4, ig: "https://www.instagram.com/rin.arinnn_/" },
   { name: "AYUB SAPUTRO", motto: "RPL for life!", photo: s5, ig: "https://www.instagram.com/ayub_saputro01/" },
   { name: "CHARLES AGUSTIAN PUTRA", motto: "Never stop learning.", photo: s6, ig: "https://www.instagram.com/charp.ete/" },
-  { name: "ELA DWI PURWATI", motto: "Hello World, Hello Future.", photo: s7, ig: "#" },
+  { name: "ELA DWI PURWATI", motto: "Hello World, Hello Future.", photo: s7``````, ig: "#" },
   { name: "FABIAN VIGO HARDIANSYAH", motto: "Code with passion.", photo: s8, ig: "https://www.instagram.com/fbianvgo__/" },
   { name: "FAIZ ARSYA NAFIZA", motto: "Sukses itu proses.", photo: s9, ig: "#" },
   { name: "FITO REHANES FIRMANSAH", motto: "Dream big, start small.", photo: s10, ig: "https://www.instagram.com/fitokejedotsusu/" },
