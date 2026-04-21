@@ -32,7 +32,7 @@ const students = [
   { name: "FABIAN VIGO HARDIANSYAH", motto: "Code with passion.", photo: s8, ig: "https://www.instagram.com/fbianvgo__/" },
   { name: "FAIZ ARSYA NAFIZA", motto: "Sukses itu proses.", photo: s9, ig: "#" },
   { name: "FITO REHANES FIRMANSAH", motto: "Dream big, start small.", photo: s10, ig: "https://www.instagram.com/fitokejedotsusu/" },
-  { name: "FYTO SURYA PRATAMA", motto: "Keep calm and code on.", photo: s1, ig: "#" },
+  { name: "FYTO SURYA PRATAMA", motto: "Keep calm and code on.", photo: s11, ig: "#" },
   { name: "GHIO PRAMANA AINURI", motto: "Bersama kita bisa!", photo: s12, ig: "https://www.instagram.com/ghiioo_717/" },
   { name: "MOHAMAD YAKIN NUR ROHMAN", motto: "Bersama kita bisa!", photo: s13, ig: "https://www.instagram.com/stranger.k1n/" },
   { name: "RAIHAN ROUSYANUL FIKRI", motto: "Bersama kita bisa!", photo: s14, ig: "https://www.instagram.com/raihnfqr/" },
